@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Position Practice!</title>
+    <meta charset="utf-8" />
+    <style>
+      #positioned {
+        position: absolute;
+        width: 400px;
+        top: 20px;
+        margin-left: 50%;
+        padding: 30px 15px;
+        background: white;
+        transform: translateX(-50%);
+        z-index: 3;
+        box-sizing: border-box;
+      }
+      span {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 20px;
+        height: 20px;
+        background: #fcfc99;
+      }
+      #darkness {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .6);
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+      }
+      section {
+        z-index: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, lacus vel pharetra ullamcorper, nunc magna facilisis nisi, eget fringilla lacus augue quis ante. Quisque consectetur molestie augue, vel consequat nunc ultrices at. Aliquam porttitor, risus sit amet ultricies efficitur, ligula tortor ultrices felis, vitae tristique tellus lorem non nisl. Vestibulum cursus enim sed lorem pulvinar mattis. Praesent eget rutrum leo. Aliquam interdum turpis nec turpis blandit euismod. Nunc finibus nibh nisl. Sed auctor commodo lacinia.
+      </p>
+      <p>
+        Maecenas consectetur finibus facilisis. Aliquam erat volutpat. Proin nec turpis eget lectus rutrum egestas. Morbi pharetra tellus purus, id volutpat tellus mattis quis. Morbi sit amet dui justo. Sed malesuada pretium sem nec maximus. Phasellus eu commodo urna, eu suscipit magna. Donec quis eros eget velit sagittis sodales a at odio. Sed mattis quam sed tortor malesuada, eu accumsan sapien bibendum. Quisque bibendum pellentesque interdum. Cras tempus id risus sed lobortis. Nulla dignissim lacus ac urna convallis sodales. Nullam bibendum mollis sem sed gravida. Nullam ac lectus euismod, imperdiet augue vel, posuere tellus. Suspendisse nec tellus tortor.
+      </p>
+      <p>
+      Donec nec lacus ipsum. Sed varius, elit non facilisis aliquam, nisi sem sodales nisl, ut iaculis odio diam quis arcu. Praesent lorem urna, feugiat sed auctor ullamcorper, porta id lacus. Sed suscipit fermentum facilisis. Praesent ligula metus, pellentesque ut convallis ac, tempus sed nibh. Fusce non justo sed dui egestas rhoncus condimentum porta odio. Phasellus non turpis et nunc ultricies luctus sed et nisl. Vivamus efficitur ac lacus id scelerisque. Nam ac vestibulum nulla.
+      </p>
+    </section>
+
+    <div id="positioned">
+      <span></span>
+      I'm positioned!
+    </div>
+
+    <div id="darkness"></div>
+  </body>
+</html>
