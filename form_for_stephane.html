@@ -1,0 +1,29 @@
+<form method='get' action=''>
+  <fieldset>
+    <dl>
+      <div><dt><label for='year'>Year</label></dt>
+      <dd>
+        <select id='year' name='quarter'>
+          <option value='2014'>2014</option>
+          <option value='2015'>2015</option>
+          <option value='2016'>2016</option>
+        </select>
+      </dd>
+      </div>
+
+      <div id='quarter' hidden>
+        <select id='quarter' name='quarter'>
+          <!--Add quarters here with AJAX-->
+        </select>
+      </div>
+
+      <div id='title' hidden>
+        <select id='title' name='title'>
+          <!--Add titles here with AJAX-->
+        </select>
+      </div>
+    </dl>
+
+    <input type='submit' value='Submit Form' />
+  </fieldset>
+</form>
