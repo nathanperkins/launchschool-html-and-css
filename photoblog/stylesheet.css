@@ -1,0 +1,10 @@
+@import url("whitespaces-reset.css");
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  background: url("images/logo.png");
+}
