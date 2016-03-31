@@ -49,10 +49,12 @@ nav a.active {
 main {
   clear: both;
   width: 960px;
+  overflow: auto;
   box-sizing: border-box;
   background: white;
   margin: 0 auto;
   padding: 30px 30px 50px 30px;
+  box-shadow: 2px 5px 10px #888888;
 }
 
 .masthead {
@@ -71,5 +73,11 @@ p {
 }
 
 .article {
-  align: right;
+  float: right;
+  padding-left: 40px;
+}
+
+footer {
+  font-size: 14px;
+  padding: 15px 0 40px 40px;
 }
