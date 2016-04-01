@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Form Practice</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <dl>
+          <dt>
+            <label for"first_name">
+              First Name
+            </label>
+          </dt>
+          <dd>
+            <input type="text" id="first_name" inputmode="latin-name" name="first_name" />
+          </dd>
+
+          <dt>
+            <label for="last_name">
+              Last Name
+            </label>
+          </dt>
+          <dd>
+            <input type="text" id="last_name" inputmode="latin-name" name="last_name" />
+          </dd>
+
+          <dt>
+            <label for="email">
+              Email Address
+            </label>
+          </dt>
+          <dd>
+            <input type="email" id="email" name="email" autocorrect="off" autocomplete="off" autocapitalize="off" />
+          </dd>
+
+          <dt>
+            <label for="phone">
+              Phone Number
+            </label>
+          </dt>
+          <dd>
+            <input type="tel" id="phone" name="phone" />
+          </dd>
+
+          <dt>
+            <label for="phone_type">
+              Phone Type
+            </label>
+          </dt>
+          <dd>
+            <select name="phone_type" id="phone_type">
+              <option value="Home" selected>Home</option>
+              <option value="Mobile">Mobile</option>
+              <option value="Work">Business</option>
+            </select>
+          </dd>
+        </dl>
+        <input type="submit" value="Send" />
+      </fieldset>
+    </form>
+  </body>
+</html>
