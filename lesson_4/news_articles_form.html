@@ -10,7 +10,7 @@
       <fieldset>
         <dl>
           <dt>
-            <h1>Category</h1>
+            <label for="category">Category</label>
           </dt>
           <dd>
             <select name="category">
@@ -23,18 +23,23 @@
           </select>
           </dd>
 
-          <h1>Tags</h1>
-          <select name="tag" multiple>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="javascript">Javascript</option>
-            <option value="rails">Rails</option>
-            <option value="python">Python</option>
-            <option value="django">Django</option>
-          </select>
+          <dt>
+            <label for="tag">Tag</label>
+          </dt>
+          <dd>
+            <select name="tag" multiple>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">Javascript</option>
+              <option value="rails">Rails</option>
+              <option value="python">Python</option>
+              <option value="django">Django</option>
+            </select>
+          </dd>
         </dl>
 
         <input type="submit" value="Filter" />
+        <input type="reset" value="Reset!" />
       </fieldset>
     </form>
   </body>
