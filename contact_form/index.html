@@ -9,92 +9,120 @@
   <body>
     <form action="" method="get">
       <fieldset>
-        <label for="first_name">First Name</label>
-        <input type="text" id="first_name" name="first_name" placeholder="First Name" />
+        <dl>
+          <dt>
+            <label for="first_name">First Name</label>
+          </dt>
+          <dd>
+            <input type="text" id="first_name" name="first_name" placeholder="First Name" />
+          </dd>
 
-        <label for="last_name">Last Name</label>
-        <input type="text" id="last_name" name="last_name" placeholder="Last Name" />
+          <dt>
+            <label for="last_name">Last Name</label>
+          </dt>
+          <dd>
+            <input type="text" id="last_name" name="last_name" placeholder="Last Name" />
+          </dd>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="name@domain.com" />
+          <dt>
+            <label for="email">Email</label>
+          </dt>
+          <dd>
+            <input type="email" id="email" name="email" placeholder="name@domain.com" />
+          </dd>
 
-        <label for="city">City</label>
-        <input type="city" id="city" name="city" placeholder="name@domain.com" />
+          <dt>
+            <label for="city">City</label>
+          </dt>
+          <dd>
+            <input type="text" id="city" name="city" placeholder="name@domain.com" />
+          </dd>
 
-        <label for="state">State</label>
-        <select name="state">
-          <option>AK</option>
-          <option>AL</option>
-          <option>AR</option>
-          <option>AZ</option>
-          <option>CA</option>
-          <option>CO</option>
-          <option>CT</option>
-          <option>DC</option>
-          <option>DE</option>
-          <option>FL</option>
-          <option>GA</option>
-          <option>HI</option>
-          <option>IA</option>
-          <option>ID</option>
-          <option>IL</option>
-          <option>IN</option>
-          <option>KS</option>
-          <option>KY</option>
-          <option>LA</option>
-          <option>MA</option>
-          <option>MD</option>
-          <option>ME</option>
-          <option>MI</option>
-          <option>MN</option>
-          <option>MO</option>
-          <option>MS</option>
-          <option>MT</option>
-          <option>NC</option>
-          <option>ND</option>
-          <option>NE</option>
-          <option>NH</option>
-          <option>NJ</option>
-          <option>NM</option>
-          <option>NV</option>
-          <option>NY</option>
-          <option>OH</option>
-          <option>OK</option>
-          <option>OR</option>
-          <option>PA</option>
-          <option>RI</option>
-          <option>SC</option>
-          <option>SD</option>
-          <option>TN</option>
-          <option>TX</option>
-          <option>UT</option>
-          <option>VA</option>
-          <option>VT</option>
-          <option>WA</option>
-          <option>WI</option>
-          <option>WV</option>
-          <option>WY</option>
-        </select>
+          <dt>
+          <label for="state">State</label>
+          </dt>
+          <dd>
+            <select name="state">
+              <option>AK</option>
+              <option>AL</option>
+              <option>AR</option>
+              <option>AZ</option>
+              <option>CA</option>
+              <option>CO</option>
+              <option>CT</option>
+              <option>DC</option>
+              <option>DE</option>
+              <option>FL</option>
+              <option>GA</option>
+              <option>HI</option>
+              <option>IA</option>
+              <option>ID</option>
+              <option>IL</option>
+              <option>IN</option>
+              <option>KS</option>
+              <option>KY</option>
+              <option>LA</option>
+              <option>MA</option>
+              <option>MD</option>
+              <option>ME</option>
+              <option>MI</option>
+              <option>MN</option>
+              <option>MO</option>
+              <option>MS</option>
+              <option>MT</option>
+              <option>NC</option>
+              <option>ND</option>
+              <option>NE</option>
+              <option>NH</option>
+              <option>NJ</option>
+              <option>NM</option>
+              <option>NV</option>
+              <option>NY</option>
+              <option>OH</option>
+              <option>OK</option>
+              <option>OR</option>
+              <option>PA</option>
+              <option>RI</option>
+              <option>SC</option>
+              <option>SD</option>
+              <option>TN</option>
+              <option>TX</option>
+              <option>UT</option>
+              <option>VA</option>
+              <option>VT</option>
+              <option>WA</option>
+              <option>WI</option>
+              <option>WV</option>
+              <option>WY</option>
+            </select>
+          </dd>
 
-          <label for="zip">Zip</label>
-          <input type="number" id="zip" name="zip" placeholder="12345" maxlength="5" />
-
+          <dt>
+            <label for="zip">Zip</label>
+          </dt>
+          <dd>
+            <input type="number" id="zip" name="zip" placeholder="12345" maxlength="5" />
+          </dd>
+        </dl>
 
         <label for="favorite_color">Which of these color do you most prefer?</label>
-        <select id="favorite_color" name="favorite_color">
-          <option value="red" selected>Red</option>
-          <option value="blue">Blue</option>
-          <option value="green">Green</option>
-        </select>
+        <ul>
+          <li><input type="radio" id="favorite_color" name="favorite_color" value="red">Red</input></li>
+          <li><input type="radio" id="favorite_color" name="favorite_color" value="orange">Orange</input></li>
+          <li><input type="radio" id="favorite_color" name="favorite_color" value="yellow">Yellow</input></li>
+        </ul>
 
-        <label for="favorite_technologies">What web technologies do you want to hear more about?</label>
-        <select id="favorite_technologies" name="favorite_technologies">
-          <option>html</option>
-        </select>
+        <label for="favorite_technologies">Which of these color do you most prefer?</label>
+        <ul>
+          <li><input type="checkbox" id="favorite_technologies" name="favorite_technologies" value="html">HTML</input></li>
+          <li><input type="checkbox" id="favorite_technologies" name="favorite_technologies" value="css">CSS</input></li>
+          <li><input type="checkbox" id="favorite_technologies" name="favorite_technologies" value="javascript">JavaScript</input></li>
+          <li><input type="checkbox" id="favorite_technologies" name="favorite_technologies" value="ruby">Ruby</input></li>
+          <li><input type="checkbox" id="favorite_technologies" name="favorite_technologies" value="rails">Rails</input></li>
+        </ul>
 
         <label for="comments">Comments</label>
         <textarea placeholder="Comment here" rows=5 cols=60></textarea>
-
 
         <input type="hidden" name="timestamp" value=""/>
 
