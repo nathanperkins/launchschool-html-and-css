@@ -1,0 +1,109 @@
+@import url("whitespaces-reset.css");
+
+html {
+  padding: 10px 15px 15px 15px;
+}
+
+body {
+  border: solid black 2px;
+  padding: 10px;
+  font: normal 28px Helvetica, Arial, sans-serif;
+  width: 600px;
+  background: white;
+  box-sizing: border-box;
+}
+
+header {
+  padding-bottom: 5px;
+}
+
+#macros {
+  border-bottom: 30px solid black;
+  border-top: 30px solid black;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+h2, h3 {
+  padding: 0;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: bolder;
+  padding: 5px 0;
+  text-align: left;
+}
+
+.small-border {
+  background: black;
+  height: 15px;
+}
+
+.small-border + table h2 { text-align: right; }
+
+dl {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+dt {
+  display: inline;
+  font-weight: bolder;
+}
+
+dd {
+  display: inline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+
+td, th {
+  border-bottom: 1px solid black;
+}
+
+.indent {
+  width: 30px;
+  border: none;
+}
+
+.indent + td dt {
+  font-weight: normal;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+#daily_values {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+#daily_values td {
+  border: none;
+}
+
+#daily_values p {
+  padding-left: 15px;
+  text-indent: -13px;
+}
+
+#daily_values tr:first-child td {
+  border-bottom: solid 1px black;
+}
+
+#daily_values td:last-child {
+  text-align: left;
+}
