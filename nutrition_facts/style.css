@@ -8,7 +8,7 @@ body {
   border: solid black 2px;
   padding: 10px;
   font: normal 28px Helvetica, Arial, sans-serif;
-  width: 680px;
+  width: 600px;
   background: white;
   box-sizing: border-box;
 }
@@ -84,4 +84,17 @@ td, th {
 
 td:last-child {
   text-align: right;
+}
+
+#daily_values td {
+  border: none;
+  font-size: 20px;
+}
+
+#daily_values tr:first-child td {
+  border-bottom: solid 1px black;
+}
+
+#daily_values td:last-child {
+  text-align: left;
 }
