@@ -36,7 +36,7 @@ h2, h3 {
 h2 {
   font-weight: bolder;
   padding: 5px 0;
-  border-bottom: 1px solid black;
+  text-align: left;
 }
 
 .small-border {
@@ -44,15 +44,14 @@ h2 {
   height: 15px;
 }
 
+.small-border + table h2 { text-align: right; }
+
 dl {
   padding: 0;
   margin: 0;
 }
 
-.indent td:first-child dt {
-  margin-left: 30px;
-  font-weight: normal;
-}
+
 
 dt {
   display: inline;
@@ -65,10 +64,22 @@ dd {
 
 table {
   width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
 }
 
-dl {
-  border-top: 1px solid black;
+td, th {
+  border-bottom: 1px solid black;
+}
+
+.indent {
+  width: 30px;
+  border: none;
+}
+
+.indent + td dt {
+  font-weight: normal;
 }
 
 td:last-child {
