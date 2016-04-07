@@ -1,0 +1,76 @@
+@import url("whitespaces-reset.css");
+
+html {
+  padding: 10px 15px 15px 15px;
+}
+
+body {
+  border: solid black 2px;
+  padding: 10px;
+  font: normal 28px Helvetica, Arial, sans-serif;
+  width: 680px;
+  background: white;
+  box-sizing: border-box;
+}
+
+header {
+  padding-bottom: 5px;
+}
+
+#macros {
+  border-bottom: 30px solid black;
+  border-top: 30px solid black;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+h2, h3 {
+  padding: 0;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: bolder;
+  padding: 5px 0;
+  border-bottom: 1px solid black;
+}
+
+.small-border {
+  background: black;
+  height: 15px;
+}
+
+dl {
+  padding: 0;
+  margin: 0;
+}
+
+.indent td:first-child dt {
+  margin-left: 30px;
+  font-weight: normal;
+}
+
+dt {
+  display: inline;
+  font-weight: bolder;
+}
+
+dd {
+  display: inline;
+}
+
+table {
+  width: 100%;
+}
+
+dl {
+  border-top: 1px solid black;
+}
+
+td:last-child {
+  text-align: right;
+}
