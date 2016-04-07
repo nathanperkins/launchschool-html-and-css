@@ -86,9 +86,18 @@ td:last-child {
   text-align: right;
 }
 
+#daily_values {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
 #daily_values td {
   border: none;
-  font-size: 20px;
+}
+
+#daily_values p {
+  padding-left: 15px;
+  text-indent: -13px;
 }
 
 #daily_values tr:first-child td {
