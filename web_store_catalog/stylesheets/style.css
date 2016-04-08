@@ -57,26 +57,31 @@ li figure {
   padding: 15px;
 }
 
-li img {
+li .pic-spacer {
   display: block;
   height: 140px;
-  width: auto;
-  margin: 0 auto;
   padding-bottom: 20px;
 }
 
-.hidden {
-  display: none;
+li img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+
 }
 
-input[type="checkbox"]:checked ~ img {
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"]:checked + figure img {
   position: fixed;
   left: 50%;
-  top: 50%;
-  height: 300px;
+  top: 100px;
+  height: auto;
+  width: 400px;
+  margin: 0 0 0 -200px;
 }
 
-input[type="checkbox"]:checked ~ div.shade {
+input[type="checkbox"]:checked + figure::before {
   position: fixed;
   content: "";
   left: 0;
