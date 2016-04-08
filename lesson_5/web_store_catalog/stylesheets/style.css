@@ -1,0 +1,94 @@
+@import url("whitespaces-reset.css");
+
+body {
+  padding: 0 40px 40px 40px;
+  background: #ffd505;
+  width: 900px;
+  margin: 0 auto;
+  font: normal 14px Helvetica, Arial, sans-serif;
+  color: #282830;
+}
+
+header {
+  padding: 30px 30px;
+  background: #047ec1;
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+main {
+  background: #ececec;
+  padding: 25px 25px;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+ul {
+  font-size: 0px;
+}
+
+li {
+  display: inline-block;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 1.2rem;
+}
+
+li:nth-child(4n + 1) { padding-left: 0; }
+li:nth-child(4n + 4) { padding-right: 0; }
+li:nth-child(5) { clear: both; }
+
+li figure {
+  background: #ffffff;
+  padding: 15px;
+}
+
+li .pic-spacer {
+  display: block;
+  height: 140px;
+  padding-bottom: 20px;
+}
+
+li img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+
+}
+
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"]:checked + figure img {
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  height: auto;
+  width: 400px;
+  margin: 0 0 0 -200px;
+}
+
+input[type="checkbox"]:checked + figure::before {
+  position: fixed;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+
