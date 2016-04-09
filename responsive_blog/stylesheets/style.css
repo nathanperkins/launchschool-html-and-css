@@ -4,10 +4,13 @@ body {
   font: normal 20px Arial, Helvetica, sans-serif;
   background: #3d3d3d;
   color: #45494d;
+  background-color: white;
+  background: #111111;
 }
 
 header {
   text-align: center;
+  background: #3d3d3d;
   color: #ffffff;
   padding: 140px 0 60px 0;
 }
@@ -31,7 +34,7 @@ header li {
   text-transform: uppercase;
 }
 
-main {
+main, footer {
   background: #ffffff;
   padding: 100px 90px;
 }
@@ -58,4 +61,58 @@ main p {
 
 article {
   padding: 0 110px 100px 0;
+}
+
+.previous,
+.next {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  background-color: #d2d5da;
+  color: #f5f5f5;
+  font-size: 1.0rem;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0 15px;
+}
+
+.previous { margin-left: 0; }
+li.active { background-color: #50c3af; }
+
+main ul li a {
+  display: block;
+  color: #f5f5f5;
+}
+
+sidebar {
+  float: right;
+  display: block;
+  padding: 35px 40px;
+  width: 250px;
+  height: 100%;
+  background-color: #f6f7f8;
+}
+
+sidebar li {
+  padding: 0 0 8px 20px;
+  background: transparent url("../images/category_bullet.png") 0 0 no-repeat;
+  font-size: 14px;
+}
+
+sidebar h3 {
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 0px 90px 20px 90px;
+  background: #ffffff;
+}
+
+footer p {
+  padding-top: 20px;
+  border-top: solid 1px #d0d0d0;
+  font-size: 12px;
 }
