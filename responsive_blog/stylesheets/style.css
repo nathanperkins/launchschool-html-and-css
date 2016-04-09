@@ -1,0 +1,118 @@
+@import url("whitespaces-reset.css");
+
+body { font: normal 20px Arial, Helvetica, sans-serif; color: #45494d; }
+a { text-decoration: none; color: #50c3af; }
+h2 { padding-bottom: 20px; font-size: 36px; }
+
+h3 {
+  padding-bottom: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 150%;
+  text-align: justify;
+  padding-bottom: 15px;
+}
+
+header {
+  background: #3d3d3d;
+  padding: 130px 0 50px 0;
+}
+
+header h1 {
+  padding-bottom: 120px;
+  margin-bottom: 125px;
+  text-align: center;
+  font-size: 68px;
+  text-transform: uppercase;
+  letter-spacing:  12px;
+  background: transparent url("../images/logo.png") 50% 100% no-repeat;
+}
+
+
+nav ul { text-align: center; }
+
+nav li {
+  display: inline;
+  padding: 0 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav a { color: white; }
+nav a:hover { color: #f5dc39; }
+nav a.active { color: #50c3af; }
+
+main, footer {
+  max-width: 1000px;
+  background: #ffffff;
+  padding: 80px 90px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#content {
+  float: left;
+  width: 65%;
+  padding-right: 11.5%;
+}
+
+#sidebar {
+  overflow: hidden;
+  padding: 35px;
+  background-color: #f6f7f8;
+  color: #787b80;
+}
+
+article header {
+  padding: 0;
+  background: white;
+}
+
+article {
+  padding-bottom: 65px;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 25px;
+  background-color: #d2d5da;
+  color: #f5f5f5;
+  background-color: #50c3af;
+  font-size: 1.0rem;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 15px;
+}
+
+.previous { margin-left: 0; }
+a.disabled { background-color: #d2d5da; cursor: default; }
+.button a { color: #f5f5f5; }
+
+#sidebar li {
+  padding: 0 0 8px 0px;
+  list-style-image: url("../images/category_bullet.png");
+  color: #787b80;
+}
+
+#sidebar h3 { color: #384048; }
+#sidebar ul { padding: 0 0 100px 20px; font-size: 14px; }
+#sidebar a { color: inherit; }
+#sidebar p { font-size: 14px; }
+
+footer {
+  clear: both;
+  padding: 15px 0px 30px 0px;
+  background: #ffffff;
+  color: #7e8287;
+}
+
+footer p {
+  padding-top: 20px;
+  border-top: solid 1px #d0d0d0;
+  font-size: 12px;
+}
