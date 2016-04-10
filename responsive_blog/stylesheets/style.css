@@ -17,39 +17,39 @@ p {
   padding-bottom: 15px;
 }
 
-header {
+body > header {
   background: #3d3d3d;
   padding: 130px 0 50px 0;
 }
 
-header h1 {
+body > header h1 {
   padding-bottom: 120px;
   margin-bottom: 125px;
   text-align: center;
-  font-size: 68px;
+  font-size: 60px;
   text-transform: uppercase;
   letter-spacing:  12px;
   background: transparent url("../images/logo.png") 50% 100% no-repeat;
 }
 
 
-nav ul { text-align: center; }
+body > header nav ul { text-align: center; }
 
-nav li {
+body > header nav li {
   display: inline;
   padding: 0 25px;
   font-size: 18px;
   text-transform: uppercase;
 }
 
-nav a { color: white; }
-nav a:hover { color: #f5dc39; }
-nav a.active { color: #50c3af; }
+body > header a { color: white; }
+body > header nav a:hover { color: #f5dc39; }
+body > header nav a.active { color: #50c3af; }
 
 main, footer {
   max-width: 1000px;
   background: #ffffff;
-  padding: 80px 90px;
+  padding: 80px 0px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -62,7 +62,7 @@ main, footer {
 
 #sidebar {
   overflow: hidden;
-  padding: 35px;
+  padding: 30px;
   background-color: #f6f7f8;
   color: #787b80;
 }
@@ -101,7 +101,7 @@ a.disabled { background-color: #d2d5da; cursor: default; }
   color: #787b80;
 }
 
-#sidebar h3 { color: #384048; }
+#sidebar h3 { color: #384048; padding-bottom: 25px;}
 #sidebar ul { padding: 0 0 100px 20px; font-size: 14px; }
 #sidebar a { color: inherit; }
 #sidebar p { font-size: 14px; }
@@ -165,4 +165,50 @@ textarea {
 #comment_form dt {
   margin-bottom: 5px;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  body > header { padding: 25px 0; }
+  body > header h1 { font-size: 48px; }
+  body > main h2 { font-size: 24px; }
+}
+
+@media (max-width: 600px) {
+  main { padding: 80px 0; }
+
+  body > header nav li { display: inline-block; width: 25%; }
+  #content {
+    display: inline-block;
+    float: none;
+    width: 90%;
+    margin-left: 5%;
+    padding: 0;
+  }
+
+  #sidebar {
+    display: block;
+    margin-top: 50px;
+    padding: 30px;
+  }
+
+  #sidebar .block {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 45%;
+    vertical-align: top;
+  }
+
+  #sidebar ul { padding: 0; margin-left: 20px; }
+}
+
+@media (max-width: 480px) {
+  main { padding: 30px 0; }
+  #sidebar { background-color: white; padding: 0 15px; }
+  #sidebar .block {
+    width: 100%;
+    background-color: #f6f7f8;;
+    display: block;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
 }
