@@ -116,3 +116,19 @@ footer p {
   border-top: solid 1px #d0d0d0;
   font-size: 12px;
 }
+
+#comment_form input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  font-family: inherit;
+}
+
+#comment_form .button {
+  margin: 0;
+  border: none;
+}
