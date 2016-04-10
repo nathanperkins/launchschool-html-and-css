@@ -31,26 +31,43 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.
           </p>
         </article>
-        <article id="comments">
-          <header>
-            <h2>Comments</h2>
-            <p><a href="#">Kevin</a> on <time datetime="2014-02-15">Feb 15, 2014</time></p>
+        <section id="comments">
+          <h2>Comments</h2>
+          <article>
+            <header>
+              <img src="http://placehold.it/40x40" alt="Kevin" />
+              <h3><a href="#">Kevin</a> on <time datetime="2014-02-15">Feb 15, 2014</time></h3>
+            </header>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p>
-            <p><a href="#">Chris</a> on <time datetime="2014-02-15">Feb 15, 2014</time></p>
+          </article>
+
+          <article>
+            <header>
+              <img src="http://placehold.it/40x40" alt="Chris" />
+              <h3>
+                <a href="#">Chris</a>
+                 on
+                <time datetime="2014-02-15">Feb 15, 2014</time></h3>
+            </header>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-          </header>
-        </article>
+          </article>
+        </section>
 
-        <form id="comment_form">
+        <form id="comment_form" action="" method="post">
           <fieldset>
             <h2>Post Comments</h2>
-            <input type="text" placeholder="Enter your name" />
-            <input type="email" name="email" placeholder="Enter your Email Address" />
-            <textarea name="comment" placeholder="Enter your Comments"></textarea>
+            <dl>
+              <dt><label for="name">Your Name</label></dt>
+              <dd><input type="text" id="name" name="name" placeholder="Enter your name" /></dd>
+              <dt><label for="email">Your Email</label></label>
+              <dd><input type="email" id="email" name="email" placeholder="Enter your Email Address" /></dd>
+              <dt><label for="comment">Comments</label></dt>
+              <dd><textarea id="comment" name="comment" placeholder="Enter your Comments"></textarea></dd>
+            </dl>
             <input type="submit" class="button" />
           </fieldset>
         </form>
