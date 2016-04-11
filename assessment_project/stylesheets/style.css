@@ -3,6 +3,7 @@
 body {
   max-width: 1200px;
   font: normal 16px Helvetica, Arial, sans-serif;
+  height: 100%;
 }
 
 .bubble {
@@ -10,16 +11,14 @@ body {
   background-color: #148fd5;
   color: white;
   border-radius: 12px;
-  padding: 3px 7px;
+  padding: 2px 6px;
   font-size: 14px;
   text-align: center;
 }
 
 #content {
-  float: left;
-  margin-right: 100px;
   padding: 70px 100px 0 20px;
-  width: 70%;
+  overflow: hidden;
 }
 
 nav {
@@ -27,8 +26,11 @@ nav {
   padding-top: 70px;
   background-color: #464f77;
   color: white;
-  width:25%;
+  width: 335px;
+  height: 100vh;
 }
+
+nav ul { padding-bottom: 60px; }
 
 nav li {
   padding: 15px 30px 15px 135px;
@@ -37,8 +39,13 @@ nav li {
   box-sizing: content-box;
 }
 
+nav li:first-child {
+  padding-top: 4px;
+  margin-top: -4px;
+}
+
 nav h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: normal;
   letter-spacing: 1px;
   color: white;
@@ -58,12 +65,21 @@ nav .bubble {
 }
 nav .active .bubble { background-color: #148fd5; }
 
+#all_todos > header > li, #completed_todos > header > li {
+  padding-left: 35px;
+  margin-left: 100px;
+  background: transparent url("../images/icon_list.png") 0 0 no-repeat;
+}
+
+#completed_todos > header > li { background-image: url("../images/icon_completed.png"); }
+
 #completed_todos li { text-decoration: line-through; }
 
 #content h2 {
   display: inline-block;
   vertical-align: middle;
-  font-size: 21px;
+  font-size: 22px;
+  font-weight: normal;
   padding-right: 18px;
   padding-left: 10px;
 }
