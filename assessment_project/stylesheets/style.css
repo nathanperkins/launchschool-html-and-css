@@ -6,6 +6,8 @@ body {
   height: 100%;
 }
 
+label, #menu_box { display: none; }
+
 .bubble {
   display: inline-block;
   background-color: #148fd5;
@@ -45,7 +47,7 @@ nav li:first-child {
 }
 
 nav h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   letter-spacing: 1px;
   color: white;
@@ -78,24 +80,26 @@ nav .active .bubble { background-color: #148fd5; }
 #content h2 {
   display: inline-block;
   vertical-align: middle;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: normal;
   padding-right: 18px;
   padding-left: 10px;
 }
 
 #content ul {
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 #content li {
-  padding: 15px 10px;
+  padding: 19px 0 19px 10px;
   border-bottom: solid 1px #e7e7e7;
   list-style-image: url("../images/icon_checkbox.png");
   list-style-position: inside;
   vertical-align: middle;
 }
-#content li:after {
+
+#content li:last-child { border: none; }
+#content li:not(.new):after {
   content: url("../images/icon_delete.png");
   float: right;
   vertical-align: middle;
@@ -107,4 +111,18 @@ nav .active .bubble { background-color: #148fd5; }
   list-style-image: url("../images/icon_checkbox_checked.png");
   color: #b3b3b3;
   text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  nav { display: none; }
+
+  label {
+    display: inline;
+    float: left;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+  }
+
+  #menu_box:checked + nav { display: block; }
 }
