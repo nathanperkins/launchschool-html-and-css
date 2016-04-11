@@ -6,7 +6,7 @@ body {
   height: 100%;
 }
 
-label, #menu_box { display: none; }
+#content > label, #menu_box { display: none; }
 
 .bubble {
   display: inline-block;
@@ -90,7 +90,7 @@ nav .active .bubble { background-color: #148fd5; }
   padding-top: 25px;
 }
 
-#content li {
+#content li, #content label li {
   padding: 19px 0 19px 10px;
   border-bottom: solid 1px #e7e7e7;
   list-style-image: url("../images/icon_checkbox.png");
@@ -111,6 +111,70 @@ nav .active .bubble { background-color: #148fd5; }
   list-style-image: url("../images/icon_checkbox_checked.png");
   color: #b3b3b3;
   text-decoration: line-through;
+}
+
+#modal { display: none; }
+#modal.show { display: block; }
+
+#modal #shade:before {
+  position: fixed;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#modal form {
+  display: inline-block;
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  width: 575px;
+  height: 320px;
+  padding: 40px 30px;
+  background-color: white;
+  z-index: 2;
+}
+
+#modal {
+  color: #060606;
+  font-weight: normal;
+}
+
+#modal dt, dd { display: inline-block; }
+#modal dt {
+  width: 100px;
+  vertical-align: top;
+  padding-top: 8px;
+}
+#modal dd {
+  width: 400px;
+  padding-bottom: 20px;
+}
+#modal input, textarea {
+  box-sizing: border-box;
+  padding: 5px;
+  border: solid 1px #d3d3d3;
+  width: 100%;
+}
+#modal input[type="number"] { width: 31%; }
+#modal textarea {
+  font-family: inherit;
+  color: #757575;
+  height: 150px;
+}
+
+#modal input[type="submit"], #modal input[type="button"] {
+  display: inline-block;
+  background-color: #148fd5;
+  color: white;
+  width: 184px;
+  height: 36px;
+  border-radius: 5px;
+  margin-right: 12px;
 }
 
 @media (max-width: 768px) {

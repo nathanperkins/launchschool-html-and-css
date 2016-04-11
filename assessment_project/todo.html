@@ -9,6 +9,30 @@
   </head>
 
   <body>
+    <div id="modal" class="">
+      <div id="shade"></div>
+      <form action="" method="post">
+        <fieldset>
+          <dl>
+            <dt><label for="title">Title</label></dt>
+            <dd><input type="text" id="title" name="title" placeholder="Item Name"/ ></dd>
+            <dt><label for="day">Due Date</label></dt>
+            <dd>
+              <input type="number" id="day" name="day" min=1 max=31 placeholder="Day"/ > /
+              <input type="number" id="month" name="month" min=1 max=12 placeholder="Month"/ > /
+              <input type="number" id="year" name="year" min=2016 max=2100 placeholder="Year"/ >
+            </dd>
+            <dt><label for="description">Description</label></dt>
+            <dd><textarea id="description" name="description" placeholder="Description"></textarea></dd>
+            <dt></dt>
+            <dd>
+              <input type="submit" value="Save" />
+              <input type="button" value="Mark as Complete" />
+            </dd>
+          </dl>
+        </fieldset>
+      </form>
+    </div>
     <input type="checkbox" id="menu_box" />
     <nav>
       <ul id="all_todos">
@@ -20,7 +44,6 @@
         </header>
         <li class="active">
           02/16
-          <div class="bubble">8</div>
         </li>
         <li>
           03/16
