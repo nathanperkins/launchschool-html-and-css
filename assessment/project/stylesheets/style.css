@@ -6,7 +6,18 @@ body {
   height: 100%;
 }
 
-#content > label, #menu_box { display: none; }
+#menu_box { display: none; }
+
+#content label {
+  display: inline;
+  float: left;
+  position: relative;
+  bottom: 70px;
+  left: 10px;
+}
+
+#menu_box:checked + nav { display: none; }
+
 
 .bubble {
   display: inline-block;
@@ -179,14 +190,13 @@ nav .active .bubble { background-color: #148fd5; }
 
 @media (max-width: 768px) {
   nav { display: none; }
+  #menu_box:checked + nav { display: block; }
 
-  label {
+  #content label {
     display: inline;
     float: left;
     position: relative;
     bottom: 70px;
     left: 10px;
   }
-
-  #menu_box:checked + nav { display: block; }
 }
