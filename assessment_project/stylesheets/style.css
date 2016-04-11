@@ -1,0 +1,94 @@
+@import url("whitespaces-reset.css");
+
+body {
+  max-width: 1200px;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+
+.bubble {
+  display: inline-block;
+  background-color: #148fd5;
+  color: white;
+  border-radius: 12px;
+  padding: 3px 7px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#content {
+  float: left;
+  margin-right: 100px;
+  padding: 70px 100px 0 20px;
+  width: 70%;
+}
+
+nav {
+  float: left;
+  padding-top: 70px;
+  background-color: #464f77;
+  color: white;
+  width:25%;
+}
+
+nav li {
+  padding: 15px 30px 15px 135px;
+  color: #6b7292;
+  width: 170px;
+  box-sizing: content-box;
+}
+
+nav h2 {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: white;
+  display: inline-block;
+}
+
+nav .active {
+  background-color: #383f5f;
+  color: white;
+}
+
+nav .bubble {
+  background-color: #6b7292;
+  float: right;
+  vertical-align: middle;
+  right: 0;
+}
+nav .active .bubble { background-color: #148fd5; }
+
+#completed_todos li { text-decoration: line-through; }
+
+#content h2 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+  padding-right: 18px;
+  padding-left: 10px;
+}
+
+#content ul {
+  padding-top: 40px;
+}
+
+#content li {
+  padding: 15px 10px;
+  border-bottom: solid 1px #e7e7e7;
+  list-style-image: url("../images/icon_checkbox.png");
+  list-style-position: inside;
+  vertical-align: middle;
+}
+#content li:after {
+  content: url("../images/icon_delete.png");
+  float: right;
+  vertical-align: middle;
+}
+
+#content .new, #content li:hover { color: #148fd5; }
+#content .new { list-style-image: url("../images/icon_add.png"); }
+#content .complete {
+  list-style-image: url("../images/icon_checkbox_checked.png");
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
